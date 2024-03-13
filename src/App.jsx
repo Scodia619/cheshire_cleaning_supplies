@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import mail from "./assets/mail.svg";
+import phone from "./assets/phone.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header className="header">
+        <div className="left-header">
+          <img
+            id="logo"
+            src="https://i.ontraport.com/163552.8f0e543de4dbb1fa4feddb04d9859bf7.JPEG"
+            alt="Cheshire Cleaning Supplies"
+          />
+        </div>
+        <div className="right-header">
+          <div className="phone">
+            <img src={phone} alt="Phone: " />
+            <h3>07796 582 479</h3>
+          </div>
+          <div className="email">
+            <img src={mail} alt="Email: " />
+            <h3>info@CheshireCleaningSupplies.co.uk</h3>
+          </div>
+        </div>
+      </header>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
